@@ -2,6 +2,7 @@ package net.therealbassist.extraslabs;
 
 import net.fabricmc.api.ModInitializer;
 import net.therealbassist.extraslabs.block.ModBlocks;
+import net.therealbassist.extraslabs.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +12,7 @@ public class ExtraSlabs implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 
 	}
